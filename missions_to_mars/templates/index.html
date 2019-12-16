@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <!--Link to scrape new data-->
+      <button type="button" class="btn btn-info"><a href="/scrape">Scrape New Data!</a> </button>
+    </div>
+<!--end of button div-->
+
+    <div class="row">
+      <div class="col-md-12">
+          <h3>Latest Mars News:</h2>
+
+      </div><!--end of column div-->
+    </div><!--end of row div-->
+    <div class="row">
+        <div class="col-md-12">
+<h4> {{mars_data.headline}}</h4>
+
+        </div><!--end of column div-->
+
+    </div><!--end of row div-->
+
+    <div class="row">
+<div class="col-md-12">
+<p>{{mars_data.teaser_paragraph}}</p>
+</div><!--end of column div-->
+
+    </div><!--end of row div-->
+
+    <div class="row">
+<div class="col-sm-12 col-md-8">
+<h3>Featured Mars Image</h3>
+<br>
+<img src={{mars_data.featured_image}}>
+
+
+
+</div><!--end of colun div-->
+
+
+</div><!--end of column div-->
+
+    </div><!--end of row div-->
+
+  </div><!--end of container div-->
+</body>
+
+</html>
+
