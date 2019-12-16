@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 #set uri of mongo db
 #I used an 'always free' azure db, so I updated the variable to x on the version uploaded to github
-uri = 'x'
+urk = 'x'
 client = pymongo.MongoClient(uri)
 
 
