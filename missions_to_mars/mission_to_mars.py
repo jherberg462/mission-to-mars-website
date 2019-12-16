@@ -9,12 +9,11 @@ import pandas as pd
 import numpy as np
 
 
-executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
-browser = Browser('chrome', **executable_path, headless=True)
+
 
 def init_browser():
     executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
-    return Browser("chrome", **executable_path, headless=False)
+    return Browser("chrome", **executable_path, headless=True)
 
 def scrape_data():
     
@@ -85,6 +84,9 @@ def scrape_data():
 
     df = mars_list[0]
     df.columns = ['Fact', 'Value']
+    df = df.set_index('Fact')
+
+    
 
 
     mars_facts_table = df.to_html()

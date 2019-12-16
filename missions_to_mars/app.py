@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 #set uri of mongo db
 #I used an 'always free' azure db, so I updated the variable to x on the version uploaded to github
-urk = 'x'
+uri = "x"
 client = pymongo.MongoClient(uri)
 
 
@@ -70,5 +70,5 @@ def scraper():
 
 #set debug to True for troubleshooting, keep troubleshooting code out of production
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
 
