@@ -11,7 +11,7 @@ import pymongo
 from mission_to_mars import scrape_data
 import warnings 
 warnings.filterwarnings("ignore")
-
+import os
 
 # In[2]:
 
@@ -70,5 +70,6 @@ def scraper():
 
 #set debug to True for troubleshooting, keep troubleshooting code out of production
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
