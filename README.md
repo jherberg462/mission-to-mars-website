@@ -2,7 +2,7 @@
 
 ## Goals
 
-In this project, I wanted to create a website that displays various up to date information about Mars from various sources. I also wanted the end user to be able to cause the website application to obtain and display updated information.
+In this project, I wanted to create a website that displays various up to date information about Mars from various sources. I also wanted the end-user to be able to cause the website application to obtain and display updated information.
 
 ## Flask App
 
@@ -14,4 +14,4 @@ I also created a function that will scrape specific information from two NASA we
 
 ## Deployment
 
-To deploy the website, you need to run the app.py file in the missions_to_mars folder. Prior to running the app.py file, you need to change the uri variable on line 21 to a valid MongoDB uri. 
+To deploy the website, you need to run the app.py file in the missions_to_mars folder. Prior to running the app.py file, you need to change the URI variable on line 21 to a valid MongoDB URI. 
